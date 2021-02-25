@@ -1,0 +1,119 @@
+<html>
+
+<head>
+    <title>Pizzaria</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="#">Pizzaria</a>
+        <div class="topnav-right">
+            <a href="#viewblock">View Menu</a>
+            <a href="#addTopings">Add Menu</a>
+        </div>
+    </div>
+
+    <section id="slides">
+  
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+
+                <div class="item active">
+                    <img class="img-responsive" src="combo 1.webp" alt="combo1" style="width:100%;">
+                    <div class="carousel-caption">
+                        <h3>Work from Home Veg Treat</h3>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img class="img-responsive" src="combo 2.webp" alt="combo2" style="width:100%;">
+                    <div class="carousel-caption">
+                        <h3>Movie Marathons Specials (Veg)</h3>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img class="img-responsive" src="combo 3.webp" alt="combo3" style="width:100%;">
+                    <div class="carousel-caption">
+                        <h3>Family Treat Veg Meals</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="PASTAPIZZAFAMILYTREAT.jpg" alt="combo4" style="width:100%;">
+                    <div class="carousel-caption">
+                        <h3>Pasta Pizza Family Treat (Veg)</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="combo 5.webp" alt="combo5" style="width:100%;">
+                    <div class="carousel-caption">
+                        <h3>Stay at Home Family Special (Veg)</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="combo6.webp" alt="combo6" style="width:100%;">
+                    <div class="carousel-caption">
+                        <h3>Family House Party - Veg Value Combo</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="KIDSSPECIALVEG.jpg" alt="kidscombo" style="width:100%;">
+                    <div class="carousel-caption">
+                        <h3>Pizza & Juice Partnership - Kids Combo (Meal for 1 )</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="CMB1190.jpg" alt="comboCake" style="width:100%;">
+                    <div class="carousel-caption">
+                        <h3>Ultimate cheese burst Deluxe Combo (Veg)</h3>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+    <div class="row" id="viewblock">
+        <div class="img_div">
+            <img class="img-responsive" src="pizza.png">
+        </div>
+        <div class="menu_div">
+            <button id="menu_list" onclick="getmenu()">Show Menu</button>
+            <div id="display_menu"></div>
+        </div>
+    </div>
+
+    <div class="newRow" id="addTopings">
+        <div class="block1">
+            <input id="add_item" placeholder="Type here to add toppings?" /></br>
+            <button id="add_toppings" onclick="add_item()">Recommend a new Pizza</button>
+        </div>
+        <div class="block2">
+            <div id="display_addedmenu">
+            </div>
+        </div>
+
+
+        <div>
+            <img class="img-responsive" src="topping.png">
+        </div>
+
+</body>
+
+</html>
